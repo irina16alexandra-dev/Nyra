@@ -1,0 +1,585 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    border: 3px solid rgba(128, 128, 128, 0.268);
+    max-width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+body {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    color: black;
+    background-color: rgba(200, 190, 208, 0.201);
+    font-family: sans-serif, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100%;
+}
+
+
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgba(59, 20, 59, 0.573) ;
+    text-align: center;
+color: white;
+font-weight: bold;
+text-decoration: solid;
+}
+
+p{
+    line-height: 2.0;
+    background-color: #7b416224;
+  color: rgb(18, 1, 1);
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.416);
+  border-radius: 10px;
+}
+
+.backhome a{
+    display: inline;
+    width: 20px;
+    color: #b46491;
+    background-color: transparent;
+}
+
+/* Story Page Styles */
+
+/*Phone Styles */
+@media (max-width: 600px) {
+
+    }
+    .clothes {
+        grid-template-columns: 300px 300px 300px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+}
+/*Phone Styles */
+
+/* Navigation Styles */
+nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+background-color: white;
+}
+
+nav a{ 
+    color: #656565;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+ 
+nav a:hover {
+color: #b46491;
+}
+/* Navigation Styles */
+
+
+/* Footer Styles */
+footer{ 
+    background-color:rgba(59, 20, 59, 0.573) ;
+    color: white;
+}
+/* Footer Styles */
+
+/* Home Page Styles */
+ 
+.home-page body{
+    margin: 0;
+}
+
+.hero{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('bannerHome.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+    text-align: center;
+    color: white;
+}
+.hero-content h1{
+    background-color: transparent;
+}
+
+.hero-content a{
+    color: #b46491;
+    padding: 10px;
+}
+#home{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px 40px;
+    align-items: start;
+ 
+}
+
+#home h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 30px;
+    color: #b46491;
+    letter-spacing: 0.2em;
+    grid-column: 1 / 3;
+    position: relative;
+    left: 30px;
+}
+
+#home .first {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    position: relative;
+    left: 30px;
+}
+
+#home p{
+    grid-column: 2;
+    margin: 1px;
+    position: relative;
+    left: 10px;
+}
+/* Home Page Styles */
+
+/* Images Next Styles */
+.images{
+    box-sizing: border-box;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+   max-width: 1000px;
+   margin: 20px auto;
+
+}
+.images h2{
+    text-align: center;
+    color: #b46491;
+    font-weight: bold;
+    font-size: clamp(24px, 3vw, 40px);
+    letter-spacing: 0.1em;
+    font-size: 50px;
+}
+
+.images img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+}
+.we{
+    position: relative;
+    right: 50px;
+    transform: scale(1.3 , 1.3);
+}
+.we1{
+    position: relative;
+    left: 50px;
+    transform: scale(1.3 , 1.3);
+}
+@media (max-width: 600px) {
+    .images {
+        gap: 10px;
+    }
+
+    .images h2 {
+        font-size: clamp(18px, 5vw, 28px);
+        letter-spacing: 0.04em;
+    }
+}
+
+/* Images Next Styles */
+
+
+/* Collection Page Styles */
+ #collection{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+#collection h2{
+    text-align: center;
+   font-size: 50px;
+   font-weight: 300px;
+   margin-top: 50px;
+   color: #b46491;
+   letter-spacing: 0.2em;
+
+}
+
+.clothes{
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  gap: 20px;
+  width: 100%;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clothes img{
+    width: 100%;
+    aspect-ratio: 3 / 3;
+    height: auto;
+    object-fit: cover;
+    margin-left: 70px;
+}
+.clothes p{
+    display: flex;
+    flex-direction: wrap;
+    align-items: center;
+    gap: 15px;
+    margin-left: 70px;
+}
+/* Collection Page Styles */
+
+/* Story Page Styles */
+.story{
+   display: grid;
+   grid-template-columns: 400px 400px;
+   width: 100%;
+   gap: 30px;
+
+}
+
+figure{
+   display: grid;
+   grid-template-columns: 300px 300px;
+   width: 100%;
+   gap: 15px;
+   justify-content: center;
+}
+
+
+.home-story {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+    width: 100%;
+    margin: 40px auto;
+}
+
+.home-story > h2 {
+    grid-column: 1 / -1;
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+    color: #b46491;
+    letter-spacing: 0.2em;
+}
+
+.YourStory{
+    width: auto;
+    text-align: center;
+    margin: 0;
+}
+figure{
+   display: grid;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   width: 100%;
+   margin: 0;
+   gap: 16px;
+   justify-content: center;
+}
+
+.home-story figure img {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    position: relative;
+}
+
+.YourStory p{
+    margin: 0 0 16px;
+}
+
+.YourStory p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 700px) {
+    .home-story {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .home-story > h2 {
+        grid-column: 1;
+        font-size: clamp(30px, 8vw, 42px);
+        letter-spacing: 0.08em;
+    }
+
+    .home-story figure {
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+
+/* Contact Page Styles */
+.contact1{
+    display: block;
+    font-weight: bold;
+    color: #b46491;
+    width: 200px;
+    text-align: left;
+    padding: 4px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.contact1 ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact1 a{ 
+    text-decoration: none;
+    color: #b46491;
+}
+
+.contact1 a:hover{
+    color: #656565;
+}
+
+.contactimage img{
+   width: 500px;
+   max-width: 100%;
+   height: auto;
+   
+}
+
+.contacth{
+    color:#b46491;
+    font-size: 30px;
+    text-shadow: 5px 5px 10px grey;
+}
+
+#contact{
+    font-size: large;
+    color: black;
+}
+/* Contact Page Styles */
+
+/* About Us Page Styles */
+
+.aboutabout{
+  background-color: #7b416224;
+  color: rgb(18, 1, 1);
+  padding: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.416);
+  border-radius: 10px;
+}
+.about-page h2{
+    font-size: 30px;
+    color: #b46491;
+    margin: 20px ;
+    padding: 5px;
+}
+
+#WhoWeAre{
+    display: block;
+}
+
+#WhoWeAre div{
+    display: grid;
+    grid-template-columns: minmax(140px, 220px) minmax(0, 1fr);
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+#WhoWeAre > div > h1 {
+    grid-column: 1/ -1;
+}
+
+#WhoWeAre > div > img{
+    display: block;
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    margin: 0;
+}
+#WhoWeAre > div > p {
+    display: block;
+    width: auto;
+    margin: 0;
+    min-width: 0;
+    font-size: clamp(16px, 1.4vw, 19px);
+    line-height: 1.7;
+}
+#WhoWeAre p{
+   background-color: #7b416224;
+  color: rgb(18, 1, 1);
+  padding: 20px;
+  margin: 0;
+  border: 1px solid rgba(128, 128, 128, 0.416);
+  border-radius: 10px;
+ 
+}
+
+@media (max-width: 600px) {
+    #WhoWeAre div {
+        grid-template-columns: 120px minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    #WhoWeAre > div > p {
+        padding: 16px;
+    }
+}
+
+@media (max-width: 420px) {
+    #WhoWeAre div {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    #WhoWeAre > div > img {
+        justify-self: center;
+        max-width: 220px;
+    }
+}
+
+/* About Us Page Styles */
+
+
+/* Women collection */
+
+.women h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 30px;
+    color: #b46491;
+    letter-spacing: 0.2em;
+}
+
+.women h3{
+     font-size: 20px;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 25px;
+}
+
+.product img{
+    width: 100%;
+    aspect-ratio: 3 /4;
+    object-fit: cover;
+}
+
+.product{
+    text-align: center;
+}
+.home-page body{
+    margin: 0;
+}
+
+.hero-women{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('bannerWomen.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content-women{
+    text-align: center;
+}
+.hero-content-women h1{
+    color: #b46491;
+    background-color: transparent;
+}
+/* Women collection*/
+
+/* Shoes collection*/
+
+.shoes h2{
+    font-size: 50px;
+    font-weight: 600px;
+    margin-top: 30px;
+    color: #b46491;
+    letter-spacing: 0.2em;
+}
+
+.shoes h3{
+     font-size: 20px;
+}
+
+.shoes-page .products{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    gap: 25px;
+}
+
+.shoes-page .product img{
+    width: 100%;
+    aspect-ratio: 3 /4;
+    object-fit: cover;
+}
+
+.shoes-page .product{
+    text-align: center;
+}
+
+.shoes-page body{
+    margin: 0;
+}
+
+.hero-shoes{
+    width: 100%;
+    min-height: 100vh;
+
+    background-image: url('bannerShoes.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content-shoes{
+    text-align: center;
+}
+.hero-content-shoes h1{
+    color: #b46491;
+    background-color: transparent;
+}
